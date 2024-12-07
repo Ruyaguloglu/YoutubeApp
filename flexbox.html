@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice </title>
+</head>
+<body style="padding-bottom:1000px ;">
+    <div style="
+        display:flex ;
+        flex-direction:row /* yatay olarak hizalama */  ;
+          ">
+          <!-- bu alttaki elemanlar flex ile artık blok eleman gibi değilde satır içi blok elemanı gibi davranırlar 
+        yalnızca ihtiyaçları kadar yatay alan kaplarlar. metin eklersek mesela div 1 text şeklinde metin eklediğimizde sadece ihtiyaç kadar esnedi , gridde bir alt satırda genişleme yapıyordu ama burda gereken kadar esniyor. -->
+        <!-- div 2 de paragraf eklesek bile yatayhizayı koruyarak dikey hizalancaktır ,  bir alta ekleme yaparak gridde de alta ekleniyordu ama yatay ve dikey hiza bu şekilde korunmuyordu. -->
+        <!-- horizontal:yatay
+        vertical: dikey -->
+        <div style="background-color: lightblue;">div 1 text </div>
+        <div style="background-color: lightpink;">div 2 <p>text</p></div>
+
+    </div>
+
+<div style="
+        margin-top: 30px;
+        display:flex ;
+        flex-direction:row /* yatay olarak hizalama */  ;
+            ">
+                    <div style="background-color: lightblue; width: 100px;">100px </div>
+                    <div style="background-color: lightpink; flex: 1;">flex: 1</div>
+                    <!-- flex:1 griddeki 1fr msntığında çalışır. -->
+                    
+
+</div>
+
+<div style="
+        margin-top: 30px;
+        display:flex ;
+        flex-direction:row /* yatay olarak hizalama */  ;
+            ">
+                    <div style="background-color: lightblue; width: 100px;">100px </div>
+                    <div style="background-color: lightpink; flex: 1;">flex: 1</div>
+                    <!-- flex:1 griddeki 1fr msntığında çalışır. -->
+                    <div style="background-color: lightblue;  flex:2 ;">flex: 2</div> 
+                    <!-- gridlerde belli alan kapasiteleri en başında belirtilir ve yer değiştirseler bile 100px lik alana 1fr koyarsak 100px lik yer kaplar .
+                    ama flexbox tasarımında en başında satıra göre esneklik belirttik ve burada 100px ve flex:2 yer değişirse 100px lik alana konulan flex:2 kendi istediği kadar esneyebilir yani mantık gridden daha farklı ve esnektir. -->
+<!-- youtube tasarımında arama çubuğunun yanındaki tasarımların butonların düzeninde kullanıyoruz anladığım kadarıyla . -->
+</div>
+
+<div style="
+        margin-top: 30px;
+        display:flex ;
+        flex-direction:row /* yatay olarak hizalama */  ;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        justify-content: center;
+            ">
+                    <div style="background-color: lightblue; width: 100px;">100px </div>
+                    <div style="background-color: lightpink; width: 100px;">100px</div>
+                    <!-- flex:1 griddeki 1fr msntığında çalışır. -->
+                    <div style="background-color: lightblue;  width: 100px;">100px</div> 
+</div>
+
+<div style="
+        margin-top: 30px;
+        display:flex ;
+        flex-direction:row /* yatay olarak hizalama */  ;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        justify-content: space-between;
+        /* kutuların nasıl koumlanacağına karar verir center ise ortada start ise en baştan end ise sondan başlarlar . */
+            ">
+                    <div style="background-color: lightblue; width: 100px;">100px </div>
+                    <div style="background-color: lightpink; width: 100px;">100px</div>
+                    <!-- flex:1 griddeki 1fr msntığında çalışır. -->
+                    <div style="background-color: lightblue;  width: 100px;">100px</div> 
+</div>
+
+
+<div style="
+        margin-top: 30px;
+        display:flex ;
+        flex-direction:row /* yatay olarak hizalama */  ;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        justify-content: space-between;
+        /* kutuların yatay yönde nasıl koumlanacağına karar verir center ise ortada start ise en baştan end ise sondan başlarlar . */
+        align-items: center ;
+        /* flex container içindeki ögeleri dikey yönde hizalamak için kullanılır. */
+            ">
+                    <div style="background-color: lightblue; width: 100px;">100px </div>
+                    <div style="background-color: lightpink; width: 100px;">100px</div>
+                    <!-- flex:1 griddeki 1fr msntığında çalışır. -->
+                    <div style="background-color: lightblue;  width: 100px;">100px</div> 
+</div>
+
+
+
+</body>
+</html>

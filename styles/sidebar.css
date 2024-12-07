@@ -1,0 +1,40 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index:200 ;
+    padding-top: 5px;
+}
+.sidebar-link{
+   
+    height: 74px;
+    margin-bottom: 1px;
+display: flex;
+justify-content: center;
+/* iconları yatay olarak ortalamak için kullandık hepsini aynı anda sayfanın
+sol köşesinden biraz ileride hizaladık.*/
+align-items: center;
+/* bu da ikonları dikey olarak hizalamak için kullanıldı. */
+flex-direction: column;
+cursor: pointer;
+}
+
+.sidebar-link:hover{
+    background-color: rgb(235,235,235);
+}
+
+.sidebar-link img{
+    /* bu üstteki ifade tüm görselleri değil sidebar alanındaki 
+    tüm görseller üzerinde ortak olan işlemleri hedeflediğimizi belirtir. */
+margin-bottom: 4px;
+height: 24px;
+}
+
+.sidebar-link div {
+    font-family: Roboto,Arial;
+    font-size: 10px;
+
+}

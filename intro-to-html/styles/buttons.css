@@ -1,0 +1,78 @@
+
+        .subscribe-button{
+            background-color: rgb(200, 0, 0);
+            color: antiquewhite;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-left: 16px;
+            padding-bottom: 10px;
+            padding-right: 16px;
+            transition: opacity 0.15s;
+            /*!!!!!!!!!!ÇOK ÖNEMLİ!!!!!!!!!!!! padding ve margin kullanmak daha mantıklı çünkü sadece height ve width ile belirlenen buton tasarımında uzun 
+            bir yazı yazdığımızda yazı alt kısımlara yani buton dışına taşma yapıyordu fakat margin ve padding kullandığımızda belirlenen boşlu ölçütleri her zaman korunur oldu ve uzun bir yazı yazma halimizde bile taşma yapmadı sadece buton yazı sığacak şekilde margin ve padding koruyarak uzadı bu anlattığımı örnek olarak youtube butonuna uzun bir yazı yazarak
+            görebiliriz. */
+        /* margin butonlar arasındaki mesafeyi belirlerken padding ise buton içindeki boşluk durumlarını belirler. */
+        
+            /* transiston stiller arasında geçiş yavaşlığını belirler 
+            mesela subscribe a gelindiğinde tam o anda hover button opacity si çalışıyor ve bu onun çalışma hızını belirliyor. */
+            vertical-align: top;
+            /* bunun anlamı butonları en üste hizalamak içinmiş yani margin padding veya yazı girme değişikliklerine rağmen butonlar aynı hizada olsun diye kullnılıyor 
+            daha sonrasında hizasız olma durumu engelleniyor böylece...*/
+        }
+        .subscribe-button:hover{
+             opacity: 0.8;/*bir ögeyi karartmak için kullanılır 1 de koyu olur azalttıkça daha soluk bir renk olur genelde butonlaar tıklandığında kullanılan bir özelliktir. */
+        }
+        .subscribe-button:active{
+            opacity: 0.4;
+        }
+        
+        .join-button{
+            background-color: white;
+            color: rgb(41, 118, 211);
+            border-color: rgb(41,118,211);
+            border-radius: 2px;
+            border-width: 1px;
+            border-style: solid;
+            padding-top: 9px;
+            padding-left: 16px;
+            padding-bottom: 9px;
+            padding-right: 16px;
+            cursor: pointer;
+            transition: background-color 0.15s,color 0.15s;
+            vertical-align: top;
+        }
+        .join-button:hover{
+            background-color: rgb(41,118,211);
+            color: white;
+            border-color: white;
+            
+        }
+        .join-button:active{
+            opacity: 0.7;
+        }
+        
+        .tweet-button{
+            background-color:  rgb(41,118,211);
+            color: white;
+            border-radius: 18px;
+            padding-top: 9px;
+            padding-left: 16px;
+            padding-bottom: 9px;
+            padding-right: 16px;
+            margin-left: 8px;
+            border-style: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            transition:box-shadow 0.15s ; 
+            vertical-align: top;
+        }
+        
+        .tweet-button:hover{
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.15) ;
+        }
+        
